@@ -1,6 +1,7 @@
 /* Theme colours */
 html, body {
   font-family: "Raleway", sans-serif;
+  font-size: 1em;
   overflow: hidden !important; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -10,7 +11,11 @@ h1 {
   font-size: 5em; }
 
 p {
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  font-size: 1em; }
+
+ul {
+  list-style: none; }
 
 .fp-controlArrow.fp-next {
   right: 50px;
@@ -22,6 +27,9 @@ p {
 .section {
   padding-left: 15px;
   padding-right: 15px; }
+
+.rose {
+  color: #FF5D73; }
 
 #mainSection {
   color: #494949; }

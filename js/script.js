@@ -77,4 +77,4 @@ $(document).ready(function() {
 
 $('h1, h2, h3, h4, h5, h6').addClass("wow fadeInUp");
 $('div.slide').addClass("wow fadeInRight")
-$('li').addClass("wow fadeInUp").attr('data-wow-delay', '0.5s')
+$('ul').addClass("wow fadeInUp").attr('data-wow-delay', '0.5s')
