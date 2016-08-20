@@ -10,6 +10,7 @@ $title: 'Playfair Display', serif;
 $bodyText: 'Raleway', sans-serif;
 
 html, body {
+  font-family: $bodyText;
   overflow: hidden !important;
 }
 
@@ -41,21 +42,21 @@ p {
 }
 
 #mainSection {
-
+  color: $darkGrey;
 }
 
 #aboutSection {
-
+  color: $grey;
 }
 
 #skillsSection {
-
+  color: $grey;
 }
 
 #portfolioSection {
-
+  color: $darkGrey;
 }
 
 #contactSection {
-
+  color: $darkGrey;
 }

@@ -70,13 +70,11 @@ $(document).ready(function() {
         afterResize: function(){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+    }); //full page
+}); //document ready
 
 
 
-
-
-
-
-    });
-
-})
+$('h1, h2, h3, h4, h5, h6').addClass("wow fadeInUp");
+$('div.slide').addClass("wow fadeInRight")
+$('li').addClass("wow fadeInUp").attr('data-wow-delay', '0.5s')
