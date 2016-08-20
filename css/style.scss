@@ -1,0 +1,61 @@
+/* Theme colours */
+
+$black:     #0A0908;
+$white:     #F7F7F7;
+$darkGrey:  #494949;
+$grey:      #7C7A7A;
+$rose:      #FF5D73;
+
+$title: 'Playfair Display', serif;
+$bodyText: 'Raleway', sans-serif;
+
+html, body {
+  overflow: hidden !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $title;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+p {
+  font-family: $bodyText;
+}
+
+
+.fp-controlArrow.fp-next {
+  right: 50px;
+  border-width: 18.5px 0 18.5px 14px;
+}
+
+.fp-controlArrow.fp-prev {
+  border-width: 18.5px 14px 18.5px 0;
+}
+
+.section {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#mainSection {
+
+}
+
+#aboutSection {
+
+}
+
+#skillsSection {
+
+}
+
+#portfolioSection {
+
+}
+
+#contactSection {
+
+}

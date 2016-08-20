@@ -1,0 +1,25 @@
+/* Theme colours */
+html, body {
+  overflow: hidden !important; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif; }
+
+h1 {
+  font-size: 5em; }
+
+p {
+  font-family: "Raleway", sans-serif; }
+
+.fp-controlArrow.fp-next {
+  right: 50px;
+  border-width: 18.5px 0 18.5px 14px; }
+
+.fp-controlArrow.fp-prev {
+  border-width: 18.5px 14px 18.5px 0; }
+
+.section {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/*# sourceMappingURL=style.css.map */

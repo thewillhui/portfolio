@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "authors": [
+    "Will Hui <will@willhui.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fullpage.js": "^2.8.4",
+    "bootstrap": "^3.3.7",
+    "wow": "wowjs#^1.1.2"
+  }
+}
