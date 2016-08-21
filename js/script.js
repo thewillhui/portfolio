@@ -32,7 +32,7 @@ $(document).ready(function() {
         loopHorizontal: true,
         continuousVertical: false,
         continuousHorizontal: false,
-        scrollHorizontally: false,
+        scrollHorizontally: true,
         interlockedSlides: false,
         resetSliders: false,
         normalScrollElements: '#element1, .element2',
@@ -52,7 +52,7 @@ $(document).ready(function() {
         verticalCentered: true,
         paddingTop: '3em',
         paddingBottom: '10px',
-        sectionsColor : [$black, $white, $cyan, $grey],
+        sectionsColor : [$black, $white, $grey, $black],
         fixedElements: '#header, .footer',
         // responsiveWidth: 479,
         // responsiveHeight: 600,
@@ -75,7 +75,7 @@ $(document).ready(function() {
 
 
 
-$('h1, h2, h3, h4, h5, h6, span.spanFade').addClass("wow fadeInUp")
+$('h1, h2, h3, h4, h5, h6, span.spanFade, p').addClass("wow fadeInUp").attr('data-wow-duration', '2s')
 $('div.slide').addClass("wow fadeInRight").attr('data-wow-delay', '0.5s')
 
 

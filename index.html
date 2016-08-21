@@ -32,10 +32,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li data-menuanchor="home"><a href="#home">Home</a></li>
+            <li data-menuanchor="about"><a href="#about">About</a></li>
+            <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
+            <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -44,7 +44,7 @@
     <div id="fullpage">
         <div id="mainSection" class="section active">
           <div class="row">
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-6 col-md-offset-1">
               <h1>Hello<span class="spanFade" data-wow-delay="1.5s">, my name is <span class="cyan">Will</span>.</span></h1>
               <h2 data-wow-delay="3s">I am a <span class="cyan">front-end web developer</span>, <span class="cyan">amateur photographer</span> and <span class="cyan">whisky lover</span>. </h2>
             </div>
@@ -54,16 +54,17 @@
 
 
       <div id="aboutSection" class="section">
-          <h1>About</h1>
           <div class="row">
-            <div class="col-sm-12 col-md-9 col-md-offset-2"><p>I am a highly driven web developer with a strong passion for technology, business and learning new things. I have spent the past 6 years working in sales across a range of industries and recently took my passion in technology further by taking a full-time Web Development Immersive course at General Assembly.
+            <div class="col-sm-12 col-md-9 col-md-offset-1">
+            <h1>About</h1>
+            <p data-wow-delay="0.5s">I am a highly driven web developer with a strong passion for technology, business and learning new things. I have spent the past 6 years working in sales across a range of industries and recently took my passion in technology further by taking a full-time Web Development Immersive course at General Assembly.
             <p>
-            <p>I am full-stack trained but front-end is where my passion lies.</p>
+            <p data-wow-delay="0.8s">I am full-stack trained but front-end is where my passion lies.</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-sm-12 col-md-5 col-md-offset-2">
+            <div class="col-sm-12 col-md-5 col-md-offset-1">
               <h2>Technical</h2>
               <ul class="wowList">
                 <li>HTML 5</li>
@@ -94,7 +95,11 @@
 
 
       <div id="portfolioSection" class="section">
-        <h1>Portfolio</h1>
+        <div class="row">
+          <div class="col-sm-12 col-md-5 col-md-offset-1">
+            <h1>Portfolio</h1>
+          </div>
+        </div>
         <div class="slide" data-anchor="slide1">Slide 1</div>
         <div class="slide" data-anchor="slide2">Slide 2</div>
         <div class="slide" data-anchor="slide3">Slide 3</div>
@@ -104,7 +109,11 @@
 
 
       <div id="contactSection" class="section">
-        <h1>Contact</h1>
+        <div class="row">
+          <div class="col-sm-12 col-md-5 col-md-offset-1">
+            <h1>Contact</h1>
+          </div>
+        </div>
       </div>
 
 

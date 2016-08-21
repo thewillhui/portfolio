@@ -22,6 +22,7 @@ html, body {
   font-size: $base;
   overflow: hidden !important;
   padding-right: 50px;
+  position: relative;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -110,6 +111,14 @@ ul {
   position: fixed;
   z-index: 5;
   width: 100%;
+
+  a {
+    color: $darkGrey;
+  }
+
+  li.active > a{
+    background-color: $cyan;
+  }
 
   #logo {
     width: 36px;
