@@ -1,18 +1,28 @@
 /* Theme colours */
+/* Fonts */
 html, body {
   font-family: "Raleway", sans-serif;
-  font-size: 1em;
+  font-size: 0.875em;
   overflow: hidden !important; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif; }
 
 h1 {
-  font-size: 5em; }
+  font-size: 4.236em; }
+
+h2 {
+  font-size: 2.618em; }
+
+h3 {
+  font-size: 1.618em; }
+
+h4 {
+  font-size: 1em; }
 
 p {
   font-family: "Raleway", sans-serif;
-  font-size: 1em; }
+  font-size: 0.875em; }
 
 ul {
   list-style: none; }
@@ -28,17 +38,27 @@ ul {
   padding-left: 15px;
   padding-right: 15px; }
 
-.rose {
-  color: #FF5D73; }
+.cyan {
+  color: #52D1DC; }
 
 #mainSection {
-  color: #494949; }
+  color: #494949;
+  position: relative;
+  z-index: 1; }
+
+#mainSection:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../images/pattern.png");
+  opacity: 0.2; }
 
 #aboutSection {
-  color: #7C7A7A; }
-
-#skillsSection {
-  color: #7C7A7A; }
+  color: #494949; }
 
 #portfolioSection {
   color: #494949; }

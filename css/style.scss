@@ -4,14 +4,23 @@ $black:     #0A0908;
 $white:     #F7F7F7;
 $darkGrey:  #494949;
 $grey:      #7C7A7A;
-$rose:      #FF5D73;
+$cyan:      #52D1DC;
+
+/* Fonts */
 
 $title: 'Playfair Display', serif;
 $bodyText: 'Raleway', sans-serif;
 
+$base:  0.875em;
+$base1: 1em;
+$base2: 1.618em;
+$base3: 2.618em;
+$base4: 4.236em;
+
+
 html, body {
   font-family: $bodyText;
-  font-size: 1em;
+  font-size: $base;
   overflow: hidden !important;
 }
 
@@ -20,12 +29,24 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: $base4;
+}
+
+h2 {
+  font-size: $base3;
+}
+
+h3 {
+  font-size: $base2;
+}
+
+h4 {
+  font-size: $base1;
 }
 
 p {
   font-family: $bodyText;
-  font-size: 1em;
+  font-size: $base;
 }
 
 ul {
@@ -46,20 +67,30 @@ ul {
   padding-right: 15px;
 }
 
-.rose {
-  color: $rose;
+.cyan {
+  color: $cyan;
 }
 
 #mainSection {
   color: $darkGrey;
+  position: relative;
+  z-index: 1;
+}
+
+#mainSection:before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('../images/pattern.png');
+  opacity: 0.2;
 }
 
 #aboutSection {
-  color: $grey;
-}
-
-#skillsSection {
-  color: $grey;
+  color: $darkGrey;
 }
 
 #portfolioSection {

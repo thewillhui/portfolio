@@ -4,13 +4,13 @@ $(document).ready(function() {
   var $white    = '#F7F7F7';
   var $darkGrey = '#494949';
   var $grey     = '#7C7A7A';
-  var $rose     = '#FF5D73';
+  var $cyan     = '#52D1DC';
 
     $('#fullpage').fullpage({
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['home', 'about', 'skills', 'portfolio', 'contact'],
+        anchors:['home', 'about', 'portfolio', 'contact'],
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: [],
@@ -52,7 +52,7 @@ $(document).ready(function() {
         verticalCentered: true,
         paddingTop: '3em',
         paddingBottom: '10px',
-        sectionsColor : [$black, $darkGrey, $white, $rose, $grey],
+        sectionsColor : [$black, $white, $cyan, $grey],
         fixedElements: '#header, .footer',
         responsiveWidth: 0,
         responsiveHeight: 0,
@@ -75,6 +75,11 @@ $(document).ready(function() {
 
 
 
-$('h1, h2, h3, h4, h5, h6').addClass("wow fadeInUp");
-$('div.slide').addClass("wow fadeInRight")
-$('ul').addClass("wow fadeInUp").attr('data-wow-delay', '0.5s')
+$('h1, h2, h3, h4, h5, h6, span.spanFade').addClass("wow fadeInUp")
+$('div.slide').addClass("wow fadeInRight").attr('data-wow-delay', '0.5s')
+
+
+var delay = 0.5
+$('ul.wowList li').each(function(){
+  $(this).addClass("wow fadeInUp").attr('data-wow-delay', (delay=delay+0.1)+'s')
+})
