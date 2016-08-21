@@ -43,19 +43,8 @@ ul {
 
 #mainSection {
   color: #494949;
-  position: relative;
-  z-index: 1; }
-
-#mainSection:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: url("../images/pattern.png");
-  opacity: 0.2; }
+  background: url("../images/aquarium.jpg");
+  background-size: cover; }
 
 #aboutSection {
   color: #494949; }
