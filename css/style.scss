@@ -6,22 +6,22 @@ $darkGrey:  #494949;
 $grey:      #7C7A7A;
 $cyan:      #52D1DC;
 
-/* Fonts */
+/* Type */
 
 $title: 'Playfair Display', serif;
 $bodyText: 'Raleway', sans-serif;
 
-$base:  0.875em;
-$base1: 1em;
-$base2: 1.618em;
-$base3: 2.618em;
-$base4: 4.236em;
-
+$base:  0.875em;  //14px
+$base1: 1em;      //16px
+$base2: 1.618em;  //25px
+$base3: 2.618em;  //41px
+$base4: 4.236em;  //67px
 
 html, body {
   font-family: $bodyText;
   font-size: $base;
   overflow: hidden !important;
+  padding-right: 50px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -29,11 +29,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-  font-size: $base4;
+  font-size: $base3;
 }
 
 h2 {
-  font-size: $base3;
+  font-size: $base2;
 }
 
 h3 {
@@ -47,14 +47,49 @@ h4 {
 p {
   font-family: $bodyText;
   font-size: $base;
+  line-height: 1.92;
+}
+
+@media (min-width: 480px) {
+  p {
+  font-size: $base1;
+  line-height: 1.75;
+  }
+}
+
+@media (min-width: 769px) {
+  p {
+  font-size: $base2;
+  line-height: 1.48;
+  }
+
+  h1 {
+    font-size: $base4;
+  }
+
+  h2 {
+    font-size: $base3;
+  }
+
+  h3 {
+    font-size: $base2;
+  }
+
+  h4 {
+    font-size: $base1;
+  }
+
 }
 
 ul {
   list-style: none;
 }
 
+.iScrollVerticalScrollbar .iScrollLoneScrollbar {
+  visibility: hidden;
+}
+
 .fp-controlArrow.fp-next {
-  right: 50px;
   border-width: 18.5px 0 18.5px 14px;
 }
 
@@ -69,6 +104,29 @@ ul {
 
 .cyan {
   color: $cyan;
+}
+
+#menu {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+
+  #logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .navbar-brand {
+    padding: 5px 15px;
+  }
+}
+
+.navbar {
+  border: 0;
+}
+
+.navbar-default {
+  background-color: transparent;
 }
 
 #mainSection {

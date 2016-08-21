@@ -11,7 +11,7 @@ $(document).ready(function() {
         menu: '#menu',
         lockAnchors: false,
         anchors:['home', 'about', 'portfolio', 'contact'],
-        navigation: true,
+        navigation: false,
         navigationPosition: 'right',
         navigationTooltips: [],
         showActiveTooltip: false,
@@ -36,7 +36,7 @@ $(document).ready(function() {
         interlockedSlides: false,
         resetSliders: false,
         normalScrollElements: '#element1, .element2',
-        scrollOverflow: false,
+        scrollOverflow: true,
         scrollOverflowOptions: null,
         touchSensitivity: 15,
         normalScrollElementTouchThreshold: 5,
@@ -48,14 +48,14 @@ $(document).ready(function() {
         recordHistory: true,
 
         //Design
-        controlArrows: true,
+        controlArrows: false,
         verticalCentered: true,
         paddingTop: '3em',
         paddingBottom: '10px',
         sectionsColor : [$black, $white, $cyan, $grey],
         fixedElements: '#header, .footer',
-        responsiveWidth: 0,
-        responsiveHeight: 0,
+        // responsiveWidth: 479,
+        // responsiveHeight: 600,
 
         //Custom selectors
         sectionSelector: '.section',
@@ -81,5 +81,5 @@ $('div.slide').addClass("wow fadeInRight").attr('data-wow-delay', '0.5s')
 
 var delay = 0.5
 $('ul.wowList li').each(function(){
-  $(this).addClass("wow fadeInUp").attr('data-wow-delay', (delay=delay+0.1)+'s')
+  $(this).addClass("wow fadeInUp").attr('data-wow-delay', (delay+=0.1)+'s')
 })

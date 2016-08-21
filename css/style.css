@@ -1,18 +1,19 @@
 /* Theme colours */
-/* Fonts */
+/* Type */
 html, body {
   font-family: "Raleway", sans-serif;
   font-size: 0.875em;
-  overflow: hidden !important; }
+  overflow: hidden !important;
+  padding-right: 50px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif; }
 
 h1 {
-  font-size: 4.236em; }
+  font-size: 2.618em; }
 
 h2 {
-  font-size: 2.618em; }
+  font-size: 1.618em; }
 
 h3 {
   font-size: 1.618em; }
@@ -22,13 +23,36 @@ h4 {
 
 p {
   font-family: "Raleway", sans-serif;
-  font-size: 0.875em; }
+  font-size: 0.875em;
+  line-height: 1.92; }
 
+@media (min-width: 480px) {
+  p {
+    font-size: 1em;
+    line-height: 1.75; } }
+@media (min-width: 769px) {
+  p {
+    font-size: 1.618em;
+    line-height: 1.48; }
+
+  h1 {
+    font-size: 4.236em; }
+
+  h2 {
+    font-size: 2.618em; }
+
+  h3 {
+    font-size: 1.618em; }
+
+  h4 {
+    font-size: 1em; } }
 ul {
   list-style: none; }
 
+.iScrollVerticalScrollbar .iScrollLoneScrollbar {
+  visibility: hidden; }
+
 .fp-controlArrow.fp-next {
-  right: 50px;
   border-width: 18.5px 0 18.5px 14px; }
 
 .fp-controlArrow.fp-prev {
@@ -40,6 +64,22 @@ ul {
 
 .cyan {
   color: #52D1DC; }
+
+#menu {
+  position: fixed;
+  z-index: 5;
+  width: 100%; }
+  #menu #logo {
+    width: 36px;
+    height: 36px; }
+  #menu .navbar-brand {
+    padding: 5px 15px; }
+
+.navbar {
+  border: 0; }
+
+.navbar-default {
+  background-color: transparent; }
 
 #mainSection {
   color: #494949;
