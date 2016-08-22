@@ -50,7 +50,7 @@ p {
 ul {
   list-style: none; }
 
-.iScrollVerticalScrollbar .iScrollLoneScrollbar {
+.iScrollVerticalScrollbar .iScrollLoneScrollbar, .iScrollIndicator {
   visibility: hidden; }
 
 .fp-controlArrow.fp-next {
@@ -63,7 +63,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px; }
 
-.cyan {
+.cyan, a {
   color: #52D1DC; }
 
 #menu {
@@ -93,6 +93,8 @@ ul {
 
 #aboutSection {
   color: #494949; }
+  #aboutSection .selfPortrait {
+    border-radius: 50%; }
 
 #portfolioSection {
   color: #494949; }

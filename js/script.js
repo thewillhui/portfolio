@@ -36,9 +36,9 @@ $(document).ready(function() {
         interlockedSlides: false,
         resetSliders: false,
         normalScrollElements: '#element1, .element2',
-        scrollOverflow: true,
+        scrollOverflow: false,
         scrollOverflowOptions: null,
-        touchSensitivity: 15,
+        touchSensitivity: 100,
         normalScrollElementTouchThreshold: 5,
         bigSectionsDestination: null,
 
@@ -75,8 +75,8 @@ $(document).ready(function() {
 
 
 
-$('h1, h2, h3, h4, h5, h6, span.spanFade, p').addClass("wow fadeInUp").attr('data-wow-duration', '2s')
-$('div.slide').addClass("wow fadeInRight").attr('data-wow-delay', '0.5s')
+$('h1, h2, h3, h4, h5, h6, span.spanFade, p').addClass("wow fadeInUp");
+$('div.slide').addClass("wow fadeInRight").attr('data-wow-delay', '0.5s');
 
 
 var delay = 0.5

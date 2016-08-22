@@ -86,7 +86,7 @@ ul {
   list-style: none;
 }
 
-.iScrollVerticalScrollbar .iScrollLoneScrollbar {
+.iScrollVerticalScrollbar .iScrollLoneScrollbar, .iScrollIndicator {
   visibility: hidden;
 }
 
@@ -103,7 +103,7 @@ ul {
   padding-right: 15px;
 }
 
-.cyan {
+.cyan, a {
   color: $cyan;
 }
 
@@ -146,6 +146,10 @@ ul {
 
 #aboutSection {
   color: $darkGrey;
+
+  .selfPortrait {
+    border-radius: 50%;
+  }
 }
 
 #portfolioSection {
