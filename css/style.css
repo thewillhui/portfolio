@@ -86,6 +86,16 @@ ul {
 .navbar-default {
   background-color: transparent; }
 
+.navbar-collapse.collapse.in {
+  border: 0;
+  text-align: right;
+  width: 30%;
+  margin-left: 70%; }
+
+.navbar-default .navbar-toggle {
+  background-color: #52D1DC;
+  border: 0; }
+
 #mainSection {
   color: #494949;
   background: url("../images/aquarium.jpg");
@@ -94,7 +104,8 @@ ul {
 #aboutSection {
   color: #494949; }
   #aboutSection .selfPortrait {
-    border-radius: 50%; }
+    border-radius: 50%;
+    margin: auto; }
 
 #portfolioSection {
   color: #494949; }

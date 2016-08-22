@@ -135,7 +135,20 @@ ul {
 }
 
 .navbar-default {
+
   background-color: transparent;
+}
+
+.navbar-collapse.collapse.in {
+  border: 0;
+  text-align: right;
+  width: 30%;
+  margin-left: 70%;
+}
+
+.navbar-default .navbar-toggle {
+  background-color: $cyan;
+  border: 0;
 }
 
 #mainSection {
@@ -149,6 +162,7 @@ ul {
 
   .selfPortrait {
     border-radius: 50%;
+    margin: auto;
   }
 }
 
