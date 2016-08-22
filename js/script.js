@@ -151,7 +151,7 @@ $(document).ready(function() {
 
 
 
-$('h1, h2, h3, h4, h5, h6, span.spanFade, p').addClass("wow fadeInUp");
+$('h1, h2, h3, h4, h5, h6, span.spanFade, p, img').addClass("wow fadeInUp");
 $('div.slide').addClass("wow fadeInRight").attr('data-wow-delay', '0.5s');
 
 

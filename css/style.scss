@@ -160,9 +160,14 @@ ul {
 #aboutSection {
   color: $darkGrey;
 
+  ul {
+    padding-left: 10px;
+  }
+
   .selfPortrait {
     border-radius: 50%;
     margin: auto;
+    margin-bottom: 30px;
   }
 }
 
