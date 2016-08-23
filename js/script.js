@@ -23,6 +23,7 @@ $(document).ready(function() {
         touchSensitivity: 100,
 
         //Design
+        verticalCentered: false,
         controlArrows: false,
         paddingTop: '3em',
         paddingBottom: '10px',
@@ -43,34 +44,35 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         anchors:['home', 'about', 'portfolio', 'contact'],
-        slidesNavigation: false,
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
 
         //Scrolling
         css3: true,
-        loopBottom: true,
+        autoScrolling: false,
         scrollOverflow: true,
-        touchSensitivity: 100,
+        fitToSection: false,
+        loopBottom: true,
+        scrollOverflow: false,
+        touchSensitivity: 20,
 
+        //Design
+        controlArrows: false,
         paddingTop: '3em',
-        paddingBottom: '10px',
+        paddingBottom: '3em',
         sectionsColor : [$black, $white, $grey, $black],
     }
 
-
-
-
-    $window.width() >= 375 ? ($fullpage.fullpage(normalConfig), console.log("normalConfig") ): ( $fullpage.fullpage(smlScreenConfig), console.log("smlScreenConfig") );
-
-    //full page
+  $window.width() >= 375 ? $fullpage.fullpage(normalConfig) : $fullpage.fullpage(smlScreenConfig);
 }); //document ready
 
 
-
+// add animations to all elements
 $('h1, h2, h3, h4, h5, h6, span.spanFade, p, img').addClass("wow fadeInUp");
 $('div.slide').addClass("wow fadeInRight").attr('data-wow-delay', '0.5s');
-
 
 var delay = 0.5
 $('ul.wowList li').each(function(){
   $(this).addClass("wow fadeInUp").attr('data-wow-delay', (delay+=0.1)+'s')
 })
+
