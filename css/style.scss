@@ -51,14 +51,22 @@ p {
   line-height: 1.92;
 }
 
-@media (min-width: 480px) {
+.selfPortrait {
+    width: 25%;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+@media (min-width: 641px) {
   p {
   font-size: $base1;
   line-height: 1.75;
   }
+
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1281px) {
   p {
   font-size: $base2;
   line-height: 1.48;
@@ -78,6 +86,13 @@ p {
 
   h4 {
     font-size: $base1;
+  }
+
+  .selfPortrait {
+    width: 20%;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
   }
 
 }
@@ -162,12 +177,6 @@ ul {
 
   ul {
     padding-left: 10px;
-  }
-
-  .selfPortrait {
-    border-radius: 50%;
-    margin: auto;
-    margin-bottom: 30px;
   }
 }
 
