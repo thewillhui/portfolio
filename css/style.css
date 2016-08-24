@@ -134,7 +134,11 @@ ul {
   #portfolioSection ul.features {
     list-style-type: square; }
   #portfolioSection .portfolioImg {
-    width: 80%; }
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 300px;
+    max-height: 500px; }
 
 #contactSection {
   color: #494949; }

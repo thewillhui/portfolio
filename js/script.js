@@ -63,7 +63,7 @@ $(document).ready(function() {
         sectionsColor : [$black, $white, $grey, $black],
     }
 
-  $window.width() >= 375 ? $fullpage.fullpage(normalConfig) : $fullpage.fullpage(smlScreenConfig);
+  $window.width() >= 375 ? $fullpage.fullpage(normalConfig) : ($fullpage.fullpage(smlScreenConfig), $('#aboutSection, #portfolioSection').addClass("fp-auto-height"));
 }); //document ready
 
 
