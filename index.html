@@ -11,17 +11,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css">
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+    <link rel="stylesheet" href="/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/bower_components/fullpage.js/dist/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/wow/css/libs/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Will Hui | Front-end web developer</title>
   </head>
 
-  <body class="container-fluid">
+  <body>
 
-    <nav id="menu" class="navbar navbar-default">
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -39,17 +40,17 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li data-menuanchor="home"><a href="#home">Home</a></li>
-            <li data-menuanchor="about"><a href="#about">About</a></li>
-            <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
-            <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+            <li data-menuanchor="home"><a href="/index.html#home">Home</a></li>
+            <li data-menuanchor="about"><a href="/index.html#about">About</a></li>
+            <li data-menuanchor="portfolio" class="active"><a href="/index.html#portfolio">Portfolio</a></li>
+            <li data-menuanchor="contact"><a href="/index.html#contact">Contact</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
     <div id="fullpage"> <!-- Fullpage container start -->
-        <div id="mainSection" class="section active">
+        <div id="mainSection" class="section active container-fluid">
           <div class="row vcenter">
             <div class="col-sm-12 col-md-5 col-md-offset-1">
               <h1>Hello<span class="spanFade" data-wow-delay="1.5s">, my name is <span class="cyan">Will</span>.</span></h1>
@@ -107,64 +108,54 @@
       </div>
     </div> <!-- End of about section -->
 
-      <div id="portfolioSection" class="section fp-auto-height-responsive">
+      <div id="portfolioSection" class="section">
         <div class="row">
           <div class="col-sm-12 col-md-11 col-md-offset-1">
             <h1>Portfolio</h1>
+            <h2>Selected work</h2>
           </div>
         </div>
-        <div class="slide " data-anchor="slide1">
-<!-- Images -->
-          <div class="row">
-            <div class="col-sm-3 col-sm-offset-1">
-              <img src="images/simplyhome/enquiry.png" alt="enquiry" class="portfolioImg">
-            </div>
-            <div class="col-sm-3">
-              <img src="images/simplyhome/matched-enquiry2.png" alt="matched enquiry" class="portfolioImg">
-            </div>
-<!-- Text -->
-            <div class="col-sm-4">
-              <h2>SimplyHome</h2>
-              <p class="psmallest">Angular, Ionic, Ruby on Rails with Action Cable</p>
-              <p class="psmall">
-                We were tasked to build a mobile app for a new startup in Hong Kong to help potential renters find user-rated real-estate agents. We had a 2 week timeframe and had to implement the following features:
-                <ul class="wowlist features">
-                  <li>Sign up/login for user and agent</li>
-                  <li>Separate functionality for user and agent</li>
-                  <li>User can send an enquiry</li>
-                  <li>Agent is auto-matched to enquiry</li>
-                  <li>Real-time chat system based on enquiry</li>
-                  <li>Send listings and appointments via chat</li>
-                  <li>User and agent rating system</li>
-                </ul>
-              </p>
-            </div>
-          </div>
+
+        <div class="slide text-center" data-anchor="slide1">
+          <img src="/images/portfolio/simplyhome-splash.png" alt="simplyhome" class="img-responsive">
+          <a role="button" class="btn btn-default btn-lg" href="/portfolio/portfolio-1.html">View SimplyHome</a>
         </div>
-        <div class="slide" data-anchor="slide2">Slide 2</div>
-        <div class="slide" data-anchor="slide3">Slide 3</div>
-        <div class="slide" data-anchor="slide4">Slide 4</div>
+        <div class="slide text-center" data-anchor="slide2">
+          <img src="/images/portfolio/spoonfeed-splash.png" alt="spoonfeed" class="img-responsive">
+          <a role="button" class="btn btn-default btn-lg" href="/portfolio/portfolio-2.html">View Spoonfeed</a>
+        </div>
+        <div class="slide text-center" data-anchor="slide3">
+          <img src="/images/portfolio/parkisland-splash.png" alt="parkisland" class="img-responsive">
+          <a role="button" class="btn btn-default btn-lg" href="/portfolio/portfolio-3.html">View Park Island Hub</a>
+        </div>
+        <div class="slide text-center" data-anchor="slide4">
+          <img src="/images/portfolio/murica-splash.jpg" alt="murica" class="img-responsive">
+          <a role="button" class="btn btn-default btn-lg" href="/portfolio/portfolio-4.html">View 'Murica</a>
+        </div>
+
       </div> <!-- End of portfolio section -->
 
       <div id="contactSection" class="section">
         <div class="row">
-          <div class="col-sm-12 col-md-5 col-md-offset-1">
+          <div class="col-sm-12 col-md-10 col-md-offset-1">
             <h1>Contact</h1>
-            <p>I am always interested in exciting opportunities so if you would like to get in touch you can reach me at
-
-
-
-            </p>
+            <p>I am always interested in exciting opportunities so please feel free to get in touch.</p>
+              <ul class="wowList contact fa-ul">
+                <li><i class="fa-li fa fa-envelope fa-lg"></i><a href="mailto:hello@willhui.com">hello@willhui.com</a></li>
+                <li><i class="fa-li fa fa-linkedin fa-lg"></i> <a href="https://hk.linkedin.com/in/willhui">Linkedin</a></li>
+                <li><i class="fa-li fa fa-github fa-lg"></i><a href="https://github.com/thewillhui">Github</a></li>
+              </ul>
           </div>
         </div>
       </div> <!-- End of contact section -->
 
     </div> <!-- end of #fullpage -->
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="bower_components/iscroll/build/iscroll.js"></script>
-    <script type="text/javascript" src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
-    <script type="text/javascript" src="bower_components/wow/dist/wow.min.js"></script>
-    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/iscroll/build/iscroll.js"></script>
+    <script type="text/javascript" src="/bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
+    <script type="text/javascript" src="/bower_components/wow/dist/wow.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/fullpageSettings.js"></script>
+    <script type="text/javascript" src="/js/wowSettings.js"></script>
   </body>
 </html>

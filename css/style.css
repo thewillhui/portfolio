@@ -3,7 +3,6 @@
 html, body {
   font-family: "Raleway", sans-serif;
   font-size: 0.875em;
-  padding-right: 50px;
   position: relative; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,6 +25,9 @@ p {
   font-size: 0.875em;
   line-height: 1.92; }
 
+a:hover {
+  text-decoration: none; }
+
 .psmallest {
   font-size: 0.875em; }
 
@@ -37,6 +39,10 @@ p {
   border-radius: 50%;
   margin: auto;
   margin-bottom: 20px; }
+
+.container-bg {
+  background-color: #F7F7F7;
+  background-image: url("/images/pattern.png"); }
 
 @media (min-width: 641px) {
   p {
@@ -95,19 +101,19 @@ ul {
     width: 36px;
     height: 36px; }
   #menu .navbar-brand {
-    padding: 5px 15px; }
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px; }
 
 .navbar {
   border: 0; }
 
 .navbar-default {
-  background-color: transparent; }
+  background-color: transparent;
+  text-align: right; }
 
 .navbar-collapse.collapse.in {
-  border: 0;
-  text-align: right;
-  width: 30%;
-  margin-left: 70%; }
+  border: 0; }
 
 .navbar-default .navbar-toggle {
   background-color: #52D1DC;
@@ -121,7 +127,7 @@ ul {
 
 #mainSection {
   color: #494949;
-  background: url("../images/aquarium.jpg");
+  background: url("/images/aquarium.jpg");
   background-size: cover; }
 
 #aboutSection {
@@ -130,17 +136,28 @@ ul {
     padding-left: 10px; }
 
 #portfolioSection {
-  color: #494949; }
-  #portfolioSection ul.features {
-    list-style-type: square; }
-  #portfolioSection .portfolioImg {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 80%;
-    max-width: 300px;
-    max-height: 500px; }
+  background-image: url("/images/pattern.png"); }
+  #portfolioSection img {
+    margin: 20px auto; }
+  #portfolioSection .btn-default {
+    background-color: #52D1DC;
+    border-width: 0; }
+  #portfolioSection .btn-default:hover {
+    background-color: #F7F7F7;
+    border-width: 0; }
 
 #contactSection {
-  color: #494949; }
+  color: #494949;
+  background-image: url("/images/scafell.jpg"); }
+  #contactSection .contact {
+    font-size: 1.501em; }
+
+#portfolioPage {
+  color: #494949;
+  margin-top: 3em; }
+  #portfolioPage ul.features {
+    list-style-type: square; }
+  #portfolioPage .img-responsive {
+    margin-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */

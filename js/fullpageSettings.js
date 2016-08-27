@@ -27,7 +27,7 @@ $(document).ready(function() {
         controlArrows: false,
         paddingTop: '3em',
         paddingBottom: '10px',
-        sectionsColor : [$black, $white, $grey, $black],
+        sectionsColor : [$black, $white, $white, $black],
         fixedElements: '#header, .footer',
 
         //Custom selectors
@@ -59,20 +59,13 @@ $(document).ready(function() {
         //Design
         controlArrows: false,
         paddingTop: '3em',
-        paddingBottom: '3em',
-        sectionsColor : [$black, $white, $grey, $black],
+        paddingBottom: '5em',
+        sectionsColor : [$black, $white, $white, $black],
     }
 
   $window.width() >= 375 ? $fullpage.fullpage(normalConfig) : ($fullpage.fullpage(smlScreenConfig), $('#aboutSection, #portfolioSection').addClass("fp-auto-height"));
 }); //document ready
 
 
-// add animations to all elements
-$('h1, h2, h3, h4, h5, h6, span.spanFade, p, img').addClass("wow fadeInUp");
-$('div.slide').addClass("wow fadeInRight").attr('data-wow-delay', '0.5s');
 
-var delay = 0.5
-$('ul.wowList li').each(function(){
-  $(this).addClass("wow fadeInUp").attr('data-wow-delay', (delay+=0.1)+'s')
-})
 

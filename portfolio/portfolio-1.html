@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  _      ___ ____  __ __     _
+ | | /| / (_) / / / // /_ __(_)
+ | |/ |/ / / / / / _  / // / /
+ |__/|__/_/_/_/ /_//_/\_,_/_/
+
+ -->
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/wow/css/libs/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Will Hui | Portfolio</title>
+  </head>
+
+  <body class="container container-bg">
+
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img id="logo" alt="Will Hui logo" src="/images/WH-logo.svg">
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li data-menuanchor="home"><a href="/index.html#home">Home</a></li>
+            <li data-menuanchor="about"><a href="/index.html#about">About</a></li>
+            <li data-menuanchor="portfolio" class="active"><a href="/index.html#portfolio">Portfolio</a></li>
+            <li data-menuanchor="contact"><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div id="portfolioPage" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Portfolio</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 data-wow-delay="0.5s">SimplyHome</h2>
+          <p data-wow-delay="0.6s" class="psmallest">Angular, Ionic, Ruby on Rails with Action Cable, Postgresql, MVC architecture</p>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <img src="/images/simplyhome/enquiry.png" alt="enquiry" class="img-responsive">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <img src="/images/simplyhome/matched-enquiry2.png" alt="matched enquiry" class="img-responsive">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <img src="/images/simplyhome/chat.png" alt="chat" class="img-responsive">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <img src="/images/simplyhome/rating.png" alt="rating" class="img-responsive">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <p data-wow-delay="0.5s">
+            We were tasked to build a mobile app for a new startup in Hong Kong to help potential renters find user-rated real-estate agents. We had a 2 week timeframe and had to implement the following features:
+            <ul class="wowList features">
+              <li>Sign up/login for user and agent</li>
+              <li>Separate functionality for user and agent</li>
+              <li>User can send an enquiry</li>
+              <li>Agent is auto-matched to enquiry</li>
+              <li>Real-time chat system based on enquiry</li>
+              <li>Send listings and appointments via chat</li>
+              <li>User and agent rating system</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+    </div> <!-- End of portfolio section -->
+
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/wow/dist/wow.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/wowSettings.js"></script>
+    <script type="text/javascript">
+      new WOW().init();
+    </script>
+  </body>
+</html>

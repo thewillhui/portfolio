@@ -21,7 +21,7 @@ $base5: 5.063em;
 html, body {
   font-family: $bodyText;
   font-size: $base;
-  padding-right: 50px;
+  // padding-right: 50px;
   position: relative;
 }
 
@@ -51,6 +51,10 @@ p {
   line-height: 1.92;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .psmallest {
   font-size: $base;
 }
@@ -65,6 +69,11 @@ p {
     margin: auto;
     margin-bottom: 20px;
   }
+
+.container-bg {
+  background-color: $white;
+  background-image: url('/images/pattern.png');
+}
 
 @media (min-width: 641px) {
   p {
@@ -149,7 +158,9 @@ ul {
   }
 
   .navbar-brand {
-    padding: 5px 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
   }
 }
 
@@ -158,15 +169,13 @@ ul {
 }
 
 .navbar-default {
-
   background-color: transparent;
+  text-align: right;
 }
 
 .navbar-collapse.collapse.in {
   border: 0;
-  text-align: right;
-  width: 30%;
-  margin-left: 70%;
+
 }
 
 .navbar-default .navbar-toggle {
@@ -181,37 +190,52 @@ ul {
   align-items: center;
 }
 
-
 #mainSection {
   color: $darkGrey;
-  background: url('../images/aquarium.jpg');
+  background: url('/images/aquarium.jpg');
   background-size: cover;
 }
 
 #aboutSection {
   color: $darkGrey;
-
   ul {
     padding-left: 10px;
   }
 }
 
 #portfolioSection {
-  color: $darkGrey;
-
-  ul.features {
-    list-style-type: square;
+  background-image: url('/images/pattern.png');
+  img {
+    margin: 20px auto;
   }
 
-  .portfolioImg {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 80%;
-    max-width: 300px;
-    max-height: 500px;
+  .btn-default {
+    background-color: $cyan;
+    border-width: 0;
+  }
+  .btn-default:hover {
+    background-color: $white;
+    border-width: 0;
   }
 }
 
 #contactSection {
   color: $darkGrey;
+  background-image: url('/images/scafell.jpg');
+  .contact {
+    font-size: $base2;
+  }
+}
+
+#portfolioPage {
+  color: $darkGrey;
+  margin-top: 3em;
+
+  ul.features {
+    list-style-type: square;
+  }
+
+  .img-responsive {
+    margin-bottom: 20px;
+  }
 }
