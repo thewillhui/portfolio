@@ -9,7 +9,7 @@ $(document).ready(function() {
   var $window   = $(window);
   var $fullpage = $('#fullpage');
 
-  var normalConfig = {
+  var config = {
         //Navigation
         menu: '#menu',
         anchors:['home', 'about', 'portfolio', 'contact'],
@@ -18,21 +18,16 @@ $(document).ready(function() {
 
         //Scrolling
         css3: true,
-        fitToSectionDelay: 1000,
+        fitToSectionDelay: 500,
         scrollBar: true,
-        touchSensitivity: 100,
+        touchSensitivity: 20,
 
         //Design
         verticalCentered: false,
         controlArrows: false,
-        paddingTop: '3em',
-        paddingBottom: '10px',
+        paddingTop: '30px',
+        paddingBottom: '30px',
         sectionsColor : [$black, $white, $white, $black],
-        fixedElements: '#header, .footer',
-
-        //Custom selectors
-        sectionSelector: '.section',
-        slideSelector: '.slide',
 
         //events
         afterRender: function(){
@@ -40,30 +35,8 @@ $(document).ready(function() {
         },
     };
 
-  var smlScreenConfig = {
-        //Navigation
-        menu: '#menu',
-        anchors:['home', 'about', 'portfolio', 'contact'],
-        slidesNavigation: true,
-        slidesNavPosition: 'bottom',
+  $fullpage.fullpage(config)
 
-        //Scrolling
-        css3: true,
-        autoScrolling: false,
-        scrollOverflow: true,
-        fitToSection: false,
-        loopBottom: true,
-        scrollOverflow: false,
-        touchSensitivity: 20,
-
-        //Design
-        controlArrows: false,
-        paddingTop: '3em',
-        paddingBottom: '5em',
-        sectionsColor : [$black, $white, $white, $black],
-    }
-
-  $window.width() >= 375 ? $fullpage.fullpage(normalConfig) : ($fullpage.fullpage(smlScreenConfig), $('#aboutSection, #portfolioSection').addClass("fp-auto-height"));
 }); //document ready
 
 

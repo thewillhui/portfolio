@@ -1,5 +1,5 @@
 // add animations to all elements
-$('h1, h2, h3, h4, h5, h6, span.spanFade, p, img').addClass("wow fadeInUp");
+$('h1, h2, h3, h4, h5, h6, .spanFade, .cyan, p, img').addClass("wow fadeInUp");
 // $('div.slide').addClass("wow fadeInRight").attr('data-wow-delay', '0.5s');
 
 var delay = 0.5
