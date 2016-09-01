@@ -184,10 +184,11 @@ ul {
 }
 
 .vcenter {
-  min-height: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 #mainSection {
