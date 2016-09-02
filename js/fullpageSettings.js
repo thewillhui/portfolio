@@ -21,6 +21,7 @@ $(document).ready(function() {
         fitToSectionDelay: 500,
         scrollBar: true,
         touchSensitivity: 20,
+        normalScrollElements: '#aboutSection',
 
         //Design
         verticalCentered: false,
